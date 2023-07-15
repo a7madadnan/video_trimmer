@@ -4,14 +4,14 @@ version: 2.1.0
 homepage: https://github.com/sbis04/video_trimmer
 
 environment:
-  sdk: '>=2.18.2 <3.0.0'
+  sdk: ">=2.18.2 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
 
   video_player: ^2.5.1
-  ffmpeg_kit_flutter_video: 5.1.0-LTS
+  ffmpeg_kit_flutter_min_gpl: 5.1.0-LTS
   video_thumbnail: ^0.5.3
   path_provider: ^2.0.12
   intl: ^0.18.0
