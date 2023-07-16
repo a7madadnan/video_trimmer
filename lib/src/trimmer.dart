@@ -253,6 +253,10 @@ class Trimmer {
           FFmpegKitConfig.sessionStateToString(await session.getState());
       final returnCode = await session.getReturnCode();
 
+      for (var log in (await session.getAllLogs())) {
+        debugPrint(log.getMessage());
+      }
+
       debugPrint("FFmpeg process exited with state $state and rc $returnCode");
 
       if (ReturnCode.isSuccess(returnCode)) {
